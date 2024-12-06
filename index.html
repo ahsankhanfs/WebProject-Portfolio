@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Muhammad Ahsan Khalil - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Muhammad Ahsan Khalil
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email"/>
+            ahsan@test.com
+          </div>
+          <div style="clear:both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone"/>
+            +13456764598
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/Aboutme.png" class="profile_image"/>
+      </div>
+      <div>
+          <h1>
+            Hi, I'm Muhammad Ahsan Khalil! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a Unity Developer with expertise in creating immersive and engaging gaming experiences. 
+            I specialize in game mechanics, 3D modeling integration, and cross-platform optimization.
+            I have worked on several projects that utilize Unity's advanced features such as physics simulations,
+            AI scripting, and multiplayer setups.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/unity.png"/>
+          <h6>Unity</h6>
+          <p>3 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/csharp.png"/>
+          <h6>C#</h6>
+          <p>3 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/3dmodeling.png"/>
+          <h6>3D Modeling</h6>
+          <p>2 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/ai.png"/>
+          <h6>Game AI</h6>
+          <p>2 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/multiplayer.png"/>
+          <h6>Multiplayer Networking</h6>
+          <p>1 year experience</p>
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Adventure Quest</h3>
+            <ul>
+              <li>Developed an engaging open-world game with dynamic quests, physics interactions, and stunning visuals using Unity and C#.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>AI Racing Simulator</h3>
+            <ul>
+              <li>Created an AI-based racing game with realistic car physics and a competitive multiplayer mode.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>VR Space Explorer</h3>
+            <ul>
+              <li>Designed an immersive VR game allowing players to explore the solar system in detail, integrated with Oculus Rift.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Muhammad is a highly skilled Unity developer who delivers quality work on time. His attention to detail is unparalleled.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Muhammad has been a great experience. He excels in problem-solving and has a passion for game development.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Muhammad’s dedication and knowledge of Unity development have made him an indispensable team member on several projects.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+   <div class="iconbutton">
+  <a href="#home">
+    <img src="html_finalprojimages/home.png" alt="Scroll to top" />
+  </a>
+</div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
